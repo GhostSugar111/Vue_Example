@@ -2,7 +2,8 @@
   <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
   <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
   <!-- <test1></test1> -->
-  <notebook></notebook>
+  <!-- <notebook></notebook> -->
+  <shoppingCart></shoppingCart>
   <!-- <button v-on:click="handleClick('参数')">测试</button>
   <button @click.stop="handleClick('参数',$event)">测试</button> -->
 
@@ -17,6 +18,7 @@
 <script setup>
 import test1 from './components/test1.vue'
 import notebook from './components/NoteBook.vue'
+import shoppingCart from './components/Shopping cart.vue'
 // import { reactive, toRefs } from 'vue'
 
 </script>
