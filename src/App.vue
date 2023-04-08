@@ -3,7 +3,8 @@
   <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
   <!-- <test1></test1> -->
   <!-- <notebook></notebook> -->
-  <shoppingCart></shoppingCart>
+  <!-- <shoppingCart></shoppingCart> -->
+  <movieTicket></movieTicket>
   <!-- <button v-on:click="handleClick('参数')">测试</button>
   <button @click.stop="handleClick('参数',$event)">测试</button> -->
 
@@ -19,6 +20,7 @@
 import test1 from './components/test1.vue'
 import notebook from './components/NoteBook.vue'
 import shoppingCart from './components/Shopping cart.vue'
+import movieTicket from './components/Movie ticket.vue'
 // import { reactive, toRefs } from 'vue'
 
 </script>

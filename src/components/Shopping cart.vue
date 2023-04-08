@@ -20,6 +20,7 @@
                         <td>{{ item.name }}</td>
                         <td>{{ filter(item.price) }}</td>
                         <td>
+                            <!-- v-bind:disabled="item.count <= 0"表示当item.count <= 0时，按钮不可点击 -->
                             <button @click="decrement(index)" v-bind:disabled="item.count <= 0">-</button>
                             {{ item.count }}
                             <button @click="increment(index)">+</button>
@@ -27,6 +28,7 @@
                         <td><button @click="removeHandle(index)">移除</button></td>
                     </tr>
                     <tr align="center">
+                        <!-- colspan="2"表示跨两列 colspan="3"表示跨三列-->
                         <td colspan="2">总价格</td>
                         <td colspan="3">{{ filter(computedName) }}</td>
                     </tr>
