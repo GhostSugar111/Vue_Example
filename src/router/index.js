@@ -37,6 +37,7 @@ const routes = [
 const router = createRouter({
     history: createWebHistory(process.env.BASE_URL),//history模式
     // history: createWebHashHistory(),//hash模式
+    base:'/vue_example/',
     routes
 })
 export default router
