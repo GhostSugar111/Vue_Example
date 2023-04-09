@@ -4,7 +4,8 @@
   <!-- <test1></test1> -->
   <!-- <notebook></notebook> -->
   <!-- <shoppingCart></shoppingCart> -->
-  <movieTicket></movieTicket>
+  <!-- <movieTicket></movieTicket> -->
+  <router-view></router-view>
   <!-- <button v-on:click="handleClick('参数')">测试</button>
   <button @click.stop="handleClick('参数',$event)">测试</button> -->
 
@@ -17,7 +18,7 @@
   
 </template>
 <script setup>
-import test1 from './components/test1.vue'
+import test1 from './components/guessNumber.vue'
 import notebook from './components/NoteBook.vue'
 import shoppingCart from './components/Shopping cart.vue'
 import movieTicket from './components/Movie ticket.vue'
