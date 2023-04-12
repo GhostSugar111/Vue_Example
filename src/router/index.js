@@ -1,18 +1,23 @@
 import {createRouter, createWebHistory,createWebHashHistory} from 'vue-router'
 import HelloWorld from '../components/HelloWorld.vue'
 // import NoteBook from '../components/NoteBook.vue'
+// const User=()=>import('../components/User.vue')
 const routes = [
     {
         path: '/',
         name: 'HelloWorld',
         // redirect: '/notebook',//重定向
-        component: HelloWorld
+        component: HelloWorld,
+        meta:{
+            name:'首页',
+        }//路由元信息
     },
     {
         path: '/notebook',
         name: 'NoteBook',
         // component: NoteBook
-        component: () => import('../components/NoteBook.vue')// Lazy loading懒加载
+        component: () => import('../components/NoteBook.vue'),// Lazy loading懒加载
+        // meta:{}//路由元信息
     },
     {
         path: '/shoppingcart',
@@ -32,7 +37,27 @@ const routes = [
         name: 'guessNumber',
         // component: NoteBook
         component: () => import('../components/guessNumber.vue')// Lazy loading懒加载
-    }
+    },
+    // {
+    //     path: '/user',
+    //     name: 'User',
+    //     component: User,
+    //     children:[
+    //         {
+    //             path: '',//默认子路由
+    //             component: () => import('../components/UserHome.vue')
+    //         },
+    //         {
+    //             path: 'news',// /user/news
+    //             component: () => import('../components/UserNews.vue')
+    //         },
+    //         {
+    //             path: 'msg',// /user/msg
+    //             component: () => import('../components/UserMsg.vue')
+    //         }
+    //     ]
+
+    // }
 ]
 const router = createRouter({
     history: createWebHistory(process.env.BASE_URL),//history模式

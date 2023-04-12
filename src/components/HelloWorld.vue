@@ -25,6 +25,11 @@
           <el-button type="primary" round>movieticket</el-button>
         </router-link>
       </el-col>
+      <el-col :span="2">
+        <router-link :to="{ path: '/user' ,query:{name:'xh',age:'21'}}" active-class="active" style="text-decoration: none;">
+          <el-button type="primary" round>用户</el-button>
+        </router-link>
+      </el-col>
       <!-- <el-button type="primary" round @Click="toMovie()">movieticket</el-button> -->
       
 
@@ -38,19 +43,34 @@
 
 <script>
 // import { query } from 'express';
-import { defineComponent } from 'vue';
+import { defineComponent,reactive, toRefs, computed } from 'vue';
 import { useRouter } from 'vue-router';
 // import { ElButton } from 'element-plus';
 export default defineComponent({
   name: 'HelloWorld',
   setup() {
+    const state = reactive({
+      userid: 'user'+Math.floor(Math.random()*100)
+    });
     const router = useRouter();
+    // router.addRoute('HelloWorld',{
+    //   path: '/user',
+    //   name: 'user',
+    //   component: () => import('../views/User.vue'),
+    //   meta: {
+    //     title: '用户'
+    //   }
+    // });
+    console.log("router.meta");
+    console.log(router.currentRoute.value.meta);//获取路由元信息
     const toMovie = () => {
       // router.push({ path: 'movieticket' });
       router.go(-1);
     };
     return {
-      toMovie
+      ...toRefs(state),
+      toMovie,
+      router
     };
   }
 });
