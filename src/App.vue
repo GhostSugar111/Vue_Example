@@ -22,6 +22,7 @@ import test1 from './components/guessNumber.vue'
 import notebook from './components/NoteBook.vue'
 import shoppingCart from './components/Shopping cart.vue'
 import movieTicket from './components/Movie ticket.vue'
+import slider from './components/SliderTest/main.vue'
 // import { reactive, toRefs } from 'vue'
 
 </script>

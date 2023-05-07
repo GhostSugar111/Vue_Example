@@ -38,6 +38,12 @@ const routes = [
         // component: NoteBook
         component: () => import('../components/guessNumber.vue')// Lazy loading懒加载
     },
+    {
+        path: '/slider',
+        name: 'slider',
+        // component: NoteBook
+        component: () => import('../components/SliderTest/main.vue')// Lazy loading懒加载
+    },
     // {
     //     path: '/user',
     //     name: 'User',

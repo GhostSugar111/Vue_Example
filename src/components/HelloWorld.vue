@@ -30,6 +30,11 @@
           <el-button type="primary" round>用户</el-button>
         </router-link>
       </el-col>
+      <el-col :span="2">
+        <router-link :to="{ path: 'slider' }" active-class="active" style="text-decoration: none;">
+          <el-button type="primary" round>slider</el-button>
+        </router-link>
+      </el-col>
       <!-- <el-button type="primary" round @Click="toMovie()">movieticket</el-button> -->
       
 
