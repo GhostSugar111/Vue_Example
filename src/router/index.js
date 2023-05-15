@@ -44,6 +44,12 @@ const routes = [
         // component: NoteBook
         component: () => import('../components/SliderTest/main.vue')// Lazy loading懒加载
     },
+    {
+        path: '/custominstruction',
+        name: 'CustomInstruction',
+        // component: NoteBook
+        component: () => import('../components/CustomInstruction.vue')// Lazy loading懒加载
+    },
     // {
     //     path: '/user',
     //     name: 'User',
