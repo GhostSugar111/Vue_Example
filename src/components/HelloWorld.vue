@@ -40,6 +40,16 @@
           <el-button type="primary" round>custominstruction</el-button>
         </router-link>
       </el-col>
+      <el-col :span="2">
+        <router-link :to="{ path: 'isreftest' }" active-class="active" style="text-decoration: none;">
+          <el-button type="primary" round>isreftest</el-button>
+        </router-link>
+      </el-col>
+      <el-col :span="2">
+        <router-link :to="{ path: 'axiostest' }" active-class="active" style="text-decoration: none;">
+          <el-button type="primary" round>axiostest</el-button>
+        </router-link>
+      </el-col>
       <!-- <el-button type="primary" round @Click="toMovie()">movieticket</el-button> -->
       
 

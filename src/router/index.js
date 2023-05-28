@@ -50,6 +50,18 @@ const routes = [
         // component: NoteBook
         component: () => import('../components/CustomInstruction.vue')// Lazy loading懒加载
     },
+    {
+        path: '/isreftest',
+        name: 'isRefTest',
+        // component: NoteBook
+        component: () => import('../components/isRefTest.vue')// Lazy loading懒加载
+    },
+    {
+        path: '/axiostest',
+        name: 'AxiosTest',
+        // component: NoteBook
+        component: () => import('../components/AxiosTest.vue')// Lazy loading懒加载
+    },
     // {
     //     path: '/user',
     //     name: 'User',
